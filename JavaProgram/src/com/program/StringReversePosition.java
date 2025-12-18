@@ -5,7 +5,7 @@ public class StringReversePosition {
 	public static void main(String[] args) {
 
 		String str = "continue move";
-		String[] str1 = str.split(" ");
+		String[] str1 = str.trim().split(" ");
 
 		for (int i = 0; i < str1.length; i++) {
 

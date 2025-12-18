@@ -16,11 +16,11 @@ public class StringCtoS {
 				sb.setCharAt(i, Character.toUpperCase(ch));
 
 			}
-			if (Character.isUpperCase(ch)) {
-
+			//if (Character.isUpperCase(ch)) {
+			else
 				sb.setCharAt(i, Character.toLowerCase(ch));
 
-			}
+		//	}
 
 		}
 
