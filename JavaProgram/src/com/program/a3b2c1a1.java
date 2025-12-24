@@ -4,22 +4,26 @@ public class a3b2c1a1 {
 
 	public static void main(String[] args) {
 
-		String str = "aaabbcca";
+		String s = "aaabbccabc";
 		StringBuilder result = new StringBuilder();
-
 		int count = 1;
 
-		for (int i = 0; i < str.length(); i++) {
+		for (int i = 0; i < s.length(); i++) {
 
-			if (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) {
+			char ch = s.charAt(i);
+
+			// compare current char with next char
+			if (i < s.length() - 1 && ch == s.charAt(i + 1)) {
 				count++;
-			} else {
-				result.append(str.charAt(i)).append(count);
+			}
+			// when character changes
+			else {
+				result.append(ch).append(count);
 				count = 1;
 			}
 		}
 
-		System.out.println(result); // a3b2c2a1
+		System.out.println(result);
 	}
 
 }

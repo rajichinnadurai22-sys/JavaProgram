@@ -3,7 +3,7 @@ package com.program;
 public class SecondLongestSubString {
 
 	public static void main(String[] args) {
-		
+
 		String s = "long short longest tiny";
 		String s1[] = s.split(" ");
 
